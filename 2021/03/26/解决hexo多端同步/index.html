@@ -4,14 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2023/1 | Hexo</title>
+  <title>解决hexo多端同步 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/01/index.html">
+  <meta name="description" content="前言：该篇转载自《如何解决github+Hexo的博客多终端同步问题》by monkey_lzl  终端1上的操作目标：push本地文件夹Hexo中的必要文件到yourname.github.io的分支上内容：利用github+hexo搭建博客时，新建一个Hexo文件夹，进行相关的配置，该部分主要是将这些配置文件托管到github项目的分支上，其中托管部分是用来进行多端同步的文件。 1234567">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决hexo多端同步">
+<meta property="og:url" content="http://example.com/2021/03/26/%E8%A7%A3%E5%86%B3hexo%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言：该篇转载自《如何解决github+Hexo的博客多终端同步问题》by monkey_lzl  终端1上的操作目标：push本地文件夹Hexo中的必要文件到yourname.github.io的分支上内容：利用github+hexo搭建博客时，新建一个Hexo文件夹，进行相关的配置，该部分主要是将这些配置文件托管到github项目的分支上，其中托管部分是用来进行多端同步的文件。 1234567">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-26T09:14:57.000Z">
+<meta property="article:modified_time" content="2023-01-10T15:12:08.325Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="同步">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -69,153 +76,78 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/10/VimCheatSheet/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-10T15:13:05.667Z" itemprop="datePublished">Jan 10</time>
+        <section id="main"><article id="post-解决hexo多端同步" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/26/%E8%A7%A3%E5%86%B3hexo%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5/" class="article-date">
+  <time class="dt-published" datetime="2021-03-26T09:14:57.000Z" itemprop="datePublished">2021-03-26</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/10/VimCheatSheet/">VimCheatSheet</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      解决hexo多端同步
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/10/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-10T15:13:05.667Z" itemprop="datePublished">Jan 10</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/10/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">搭建Hexo博客</a>
-    </h1>
-  
+        <p>前言：该篇转载自<a target="_blank" rel="noopener" href="https://blog.csdn.net/Monkey_LZL/article/details/60870891?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control">《如何解决github+Hexo的博客多终端同步问题》by monkey_lzl</a></p>
+<hr>
+<h1 id="终端1上的操作"><a href="#终端1上的操作" class="headerlink" title="终端1上的操作"></a>终端1上的操作</h1><p>目标：push本地文件夹Hexo中的必要文件到yourname.github.io的分支上<br>内容：利用github+hexo搭建博客时，新建一个Hexo文件夹，进行相关的配置，该部分主要是将这些配置文件托管到github项目的分支上，其中托管部分是用来进行多端同步的文件。<br><br/></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git init    //初始化本地仓库</span><br><span class="line">git add .    //或者 git add source 将必要的文件依次添加</span><br><span class="line">git commit -m &quot;Blog Source Hexo&quot;</span><br><span class="line">git branch hexo    //新建hexo分支</span><br><span class="line">git checkout hexo    //切换到hexo分支</span><br><span class="line">git remote add origin git@github.com:yourname/yourname.github.io.git    //将本地与github项目对接</span><br><span class="line">git push origin hexo    //push到github项目的hexo分支上</span><br></pre></td></tr></table></figure>
+<p>结果：github项目中会多出一个hexo分支，这个分支便是用来多端同步的关键部分</p>
+<span id="more"></span>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/10/Diablo2%20NEC/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-10T15:13:05.654Z" itemprop="datePublished">Jan 10</time>
-</a>
+<h1 id="终端2上的操作"><a href="#终端2上的操作" class="headerlink" title="终端2上的操作"></a>终端2上的操作</h1><p>目标：完成clone和push更新<br>内容：在终端2上只需将github的hexo分支clone下来并进行初次的配置<br><br/></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git clone -b hexo git@github.com:yourname/yourname.github.io.git    //将github中的hexo分支clone到本地</span><br><span class="line">cd yourname.github.io    //切换到刚刚clone的文件夹内</span><br><span class="line">npm install    //切换到文件夹后进行安装必要的组件，无需ini</span><br><span class="line">hexo new post &quot;xxxx&quot;    //新建一个.md文件，进行编辑完成博客</span><br><span class="line">git add .    //git add source</span><br><span class="line">git commit -m &quot;xx&quot;</span><br><span class="line">git push origin hexo    //更新分支</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h1 id="不同终端以后的进行的操作"><a href="#不同终端以后的进行的操作" class="headerlink" title="不同终端以后的进行的操作"></a>不同终端以后的进行的操作</h1><p>内容：先进入自己相应的文件夹<br><br/></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git pull origin hexo    //先pull完成本地与远端的融合</span><br><span class="line">hexo new post &quot;new blog name&quot;</span><br><span class="line">git add .    //git add source</span><br><span class="line">git commit -m &quot;xx&quot;</span><br><span class="line">git push origin hexo</span><br><span class="line">hexo g -d</span><br><span class="line"></span><br><span class="line">对于需要合并时可以输入以下两条命令</span><br><span class="line">git reset --hard</span><br><span class="line">git pull origin hexo</span><br></pre></td></tr></table></figure>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/10/Diablo2%20NEC/">暗黑2——死灵法师攻略</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/10/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-10T14:55:04.000Z" itemprop="datePublished">Jan 10</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/03/26/%E8%A7%A3%E5%86%B3hexo%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5/" data-id="clcqdiaa1000s4so9elfahhfz" data-title="解决hexo多端同步" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/10/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5/">搭建Hexo博客完整攻略</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/10/%E6%B3%B0%E8%AF%AD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-09T17:34:25.000Z" itemprop="datePublished">Jan 10</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/10/%E6%B3%B0%E8%AF%AD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">泰语学习记录</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/09/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-09T10:28:16.000Z" itemprop="datePublished">Jan 9</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/09/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">西班牙语学习记录</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8C%E6%AD%A5/" rel="tag">同步</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/09/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E4%BA%BA%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-09T10:27:49.000Z" itemprop="datePublished">Jan 9</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/09/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E4%BA%BA%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">经济学人学习记录</a>
-    </h1>
+    <a href="/2021/03/27/hexo%E5%BB%BA%E7%AB%99%E4%B9%8B%E8%AE%BE%E7%BD%AESSH%E5%AF%86%E9%92%A5/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          hexo建站之设置SSH密钥
+        
+      </div>
+    </a>
   
+  
+    <a href="/2021/03/26/Merlin%E5%88%86%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Merlin分析</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
