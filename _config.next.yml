@@ -928,4 +928,12 @@ css: css
 js: js
 images: images
 
-
+# 网易云音乐
+music:
+  enable: true
+  #sever: netease
+  #type: playlist
+  #loop: 'all'
+  #order: 'list'
+  #preload: 'auto'
+  autoplay: true
