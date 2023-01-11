@@ -928,7 +928,4 @@ css: css
 js: js
 images: images
 
-# 网易云音乐
-music:
-  enable: true
-  autoplay: true
+
