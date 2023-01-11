@@ -2276,7 +2276,7 @@ ul.breadcrumb li:last-child {
 }
 .menu .menu-item a {
   border-bottom: 1px solid transparent;
-  color: #25cc0f !important;
+  color: #e02a0a !important;
 }
 @media (max-width: 767px) {
   .menu .menu-item a {
@@ -2361,7 +2361,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #beb6ff;
+  background: #5e60ba;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

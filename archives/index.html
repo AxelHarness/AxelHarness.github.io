@@ -325,7 +325,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-01-12 03:07:27" itemprop="dateModified" datetime="2023-01-12T03:07:27+08:00">2023-01-12</time>
+      <time title="Modified: 2023-01-12 03:28:18" itemprop="dateModified" datetime="2023-01-12T03:28:18+08:00">2023-01-12</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -344,7 +344,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Word count in article: </span>
-      <span>270</span>
+      <span>271</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -363,36 +363,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>2023年伊始，我打算重新开一个博客，用来记录往后的学习过程与感悟，冲冲冲！</p>
-<h2 id="Windows下搭建hexo博客"><a href="#Windows下搭建hexo博客" class="headerlink" title="Windows下搭建hexo博客"></a>Windows下搭建hexo博客</h2><ul>
-<li><p>安装 <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a></p>
-</li>
-<li><p>安装 <a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a></p>
-</li>
-<li><p>安装 Hexo</p>
-</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 切换成淘宝镜像源</span><br><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"># 安装hexo</span><br><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>搭建博客</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 打开一个目录，创建Blog文件夹</span><br><span class="line">$ mkdir</span><br><span class="line"></span><br><span class="line"># 初始化一个博客</span><br><span class="line">$ hexo init</span><br><span class="line"></span><br><span class="line"># 安装部署插件</span><br><span class="line">$ npm install --save hexo-deployer-git</span><br><span class="line"></span><br><span class="line"># 配置_conifg.yml文件</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/AxelHarness/AxelHarness.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>创建SSH KEY</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 检查电脑上是否有ssh key</span><br><span class="line">$ ~/.ssh </span><br><span class="line">OR</span><br><span class="line">$ ~/.ssh ls</span><br><span class="line"></span><br><span class="line"># Generating a new SSH key and adding it to the ssh-agent</span><br><span class="line">$ ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</span><br><span class="line">OR</span><br><span class="line">$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Adding your SSH key to the ssh-agent</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Ensure the ssh-agent is running and start the ssh-agent in the background</span><br><span class="line">$ eval &quot;$(ssh-agent -s)&quot;</span><br><span class="line">&gt; Agent pid 59566</span><br><span class="line"></span><br><span class="line"># Add your SSH private key to the ssh-agent</span><br><span class="line">$ ssh-add ~/.ssh/id_ed25519</span><br><span class="line"></span><br><span class="line"># Copy the SSH public key to your clipboard</span><br><span class="line">$ clip &lt; ~/.ssh/id_ed25519.pub</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Add the SSH key to your account on GitHub\</li>
-</ul>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>至此，基本完成，过程中所遇到的问题，还请移步另一篇博客《搭建hexo博客疑难汇总》。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/01/10/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
