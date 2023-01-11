@@ -8,6 +8,8 @@ categories: hexo
 
 2023年伊始，我打算重新开一个博客，用来记录往后的学习过程与感悟，冲冲冲！
 
+<!--more-->
+
 ## Windows下搭建hexo博客
 
 - 安装 [Git](https://git-scm.com/downloads)
