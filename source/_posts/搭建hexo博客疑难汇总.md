@@ -169,4 +169,13 @@ deploy:
 
 ## Windows环境下解决 github push failed (remote: Permission to userA/XXXX.git denied to userB.)
 
+· 在VScode的扩展插件中安装PicGo
+
+· 按下CTRL + ,进行PicGo插件的配置，使之与Github中的文档仓库关联
+
+![迁移hexo到新电脑 - 简书 - Google Chrome 1_13_2023 12_53_57 AM](https://raw.githubusercontent.com/AxelHarness/Images/main/images/%E8%BF%81%E7%A7%BBhexo%E5%88%B0%E6%96%B0%E7%94%B5%E8%84%91%20-%20%E7%AE%80%E4%B9%A6%20-%20Google%20Chrome%201_13_2023%2012_53_57%20AM.png)
+
+· 选择要使用的图片，右键复制到剪切板
+
+· 在Markdown文件中需要插入图片的地方，按下CTRL + ALT + U完成粘贴。
 
