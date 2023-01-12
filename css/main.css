@@ -2242,7 +2242,7 @@ ul.breadcrumb li:last-child {
   padding: 5px;
 }
 .brand {
-  color: #ffb6c1 !important;
+  color: #851c2b !important;
   background: var(--btn-default-bg);
 }
 .header {
@@ -2361,7 +2361,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #5e60ba;
+  background: #f9ff34;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2406,7 +2406,7 @@ ul.breadcrumb li:last-child {
   }
 }
 body {
-  color: #ffb6c1 !important;
+  color: #10e76a !important;
   background: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
