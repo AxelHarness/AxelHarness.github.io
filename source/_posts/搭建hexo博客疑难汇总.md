@@ -169,6 +169,16 @@ deploy:
 
 ## Windows环境下解决 github push failed (remote: Permission to userA/XXXX.git denied to userB.)
 
+· 进入Control Panel
+
+· Click User Accounts
+
+· Click Manage Windows Credentials
+
+· Delete Github Account
+
+## 采用图床在markdown格式下插入图片
+
 · 在VScode的扩展插件中安装PicGo
 
 · 按下CTRL + ,进行PicGo插件的配置，使之与Github中的文档仓库关联
@@ -177,5 +187,4 @@ deploy:
 
 · 选择要使用的图片，右键复制到剪切板
 
-· 在Markdown文件中需要插入图片的地方，按下CTRL + ALT + U完成粘贴。
-
+· 在Markdown文件中需要插入图片的地方，按下CTRL + ALT + U完成粘贴
