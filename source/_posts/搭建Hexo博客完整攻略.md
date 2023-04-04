@@ -77,4 +77,4 @@ $ clip < ~/.ssh/id_ed25519.pub
 
 ## 结语
 
-至此，基本完成，过程中所遇到的问题，还请移步另一篇博客《搭建hexo博客疑难汇总》。
+至此，基本完成，过程中所遇到的问题，还请移步另一篇博客[《搭建hexo博客疑难汇总》](https://axelharness.github.io/2023/01/12/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E7%96%91%E9%9A%BE%E6%B1%87%E6%80%BB/#Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%A7%A3%E5%86%B3-github-push-failed-remote-Permission-to-userA-x2F-XXXX-git-denied-to-userB)。
